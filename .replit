@@ -42,3 +42,26 @@ externalPort = 80
 [agent]
 expertMode = true
 integrations = ["javascript_openai:1.0.0", "javascript_gemini:1.0.0"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Extension Dev Server"
+
+[[workflows.workflow]]
+name = "Extension Dev Server"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "replkit dev"
+
+[workflows.workflow.metadata]
+outputType = "console"
