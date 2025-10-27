@@ -1,10 +1,10 @@
 {
-  "name": "My extension",
-  "description": "A new Replit Extension",
+  "name": "AI Assistant",
+  "description": "Chat with an AI assistant powered by Google Gemini",
   "icon": "replit.svg",
   "tools": [
     {
-      "name": "Example tool",
+      "name": "AI Chat",
       "handler": "/tool",
       "icon": "/replit.svg"
     }
