@@ -41,4 +41,4 @@ externalPort = 80
 
 [agent]
 expertMode = true
-integrations = ["javascript_openai:1.0.0"]
+integrations = ["javascript_openai:1.0.0", "javascript_gemini:1.0.0"]
