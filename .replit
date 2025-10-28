@@ -58,10 +58,11 @@ args = "Extension Dev Server"
 [[workflows.workflow]]
 name = "Extension Dev Server"
 author = "agent"
+mode = "parallel"
+
+[workflows.workflow.metadata]
+outputType = "console"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "replkit dev"
-
-[workflows.workflow.metadata]
-outputType = "console"
